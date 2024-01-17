@@ -3,6 +3,7 @@ import { Board } from './components/Board'
 import { Turns } from './constants'
 import { Square } from './components/Square'
 import { checkWinner } from './logic/board'
+import { WinnerModal } from './components/WinnerModal'
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null))
@@ -36,6 +37,8 @@ function App() {
       <Square isSelected={turn === Turns.X}>{Turns.X}</Square>
       <Square isSelected={turn === Turns.O}>{Turns.O}</Square>
     </section>
+
+    <WinnerModal winner={winner}/>
     </main>
   )
 }
