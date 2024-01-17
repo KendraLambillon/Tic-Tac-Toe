@@ -29,7 +29,7 @@ function App() {
 
   return (
     <main className="board">
-      <h1>Tres en raya</h1>
+      <h1>Tic-Tac-Toe</h1>
 
       <Board board={board} updateBoard={updateBoard} />
 
