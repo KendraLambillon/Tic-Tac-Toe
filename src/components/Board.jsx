@@ -11,7 +11,7 @@ export function Board({board, updateBoard}) {
                         index={index}
                         updateBoard={updateBoard}
                     >
-                        {index}
+                        {board[index]}
                     </Square>
                 )
             })
