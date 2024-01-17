@@ -1,6 +1,6 @@
 import { Square } from "./Square";
 
-export function WinnerModal({ winner }) {
+export function WinnerModal({ winner, resetGame }) {
     if (winner === null) return null
 
     const winnerText = winner === false ? 'Tie' : 'Winner is: '
@@ -15,7 +15,7 @@ export function WinnerModal({ winner }) {
                 </header>
 
                 <footer>
-                    <button>Restart game</button>
+                    <button onClick={resetGame}>Restart game</button>
                 </footer>
             </div>
         </section>
