@@ -43,12 +43,12 @@ function App() {
 
       <Board board={board} updateBoard={updateBoard} />
 
-    <section className="turn">
-      <Square isSelected={turn === Turns.X}>{Turns.X}</Square>
-      <Square isSelected={turn === Turns.O}>{Turns.O}</Square>
-    </section>
+      <section className="turn">
+        <Square isSelected={turn === Turns.X}>{Turns.X}</Square>
+        <Square isSelected={turn === Turns.O}>{Turns.O}</Square>
+      </section>
 
-    <WinnerModal winner={winner} resetGame={resetGame}/>
+      <WinnerModal winner={winner} resetGame={resetGame}/>
     </main>
   )
 }
