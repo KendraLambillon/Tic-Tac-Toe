@@ -43,12 +43,17 @@ function App() {
 
       <Board board={board} updateBoard={updateBoard} />
 
-    <section className="turn">
-      <Square isSelected={turn === Turns.X}>{Turns.X}</Square>
-      <Square isSelected={turn === Turns.O}>{Turns.O}</Square>
-    </section>
+      <section className="turn">
+        <Square isSelected={turn === Turns.X}>{Turns.X}</Square>
+        <Square isSelected={turn === Turns.O}>{Turns.O}</Square>
+      </section>
 
-    <WinnerModal winner={winner} resetGame={resetGame}/>
+      <WinnerModal winner={winner} resetGame={resetGame}/>
+
+      <footer>
+      <small>Coded by <a href="http://www.linkedin.com/in/kendra-lambillon/" >Kendra Lambillon</a> with the <a href="https://github.com/KendraLambillon/Tic-Tac-Toe" >Open-sourced on Github</a> and <a href="" >hosted on Netlify</a>.</small>
+      </footer>
+
     </main>
   )
 }
