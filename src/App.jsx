@@ -49,6 +49,7 @@ function App() {
       </section>
 
       <WinnerModal winner={winner} resetGame={resetGame}/>
+
     </main>
   )
 }
